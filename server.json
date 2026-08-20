@@ -1,0 +1,17 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.filippopilo/cortex",
+  "title": "Cortex",
+  "description": "Patented semantic memory for AI agents: quality-gated writes, conflict tracking. Free trial.",
+  "version": "1.0.0",
+  "repository": {
+    "url": "https://github.com/FilippoPilo/cortex-connector",
+    "source": "github"
+  },
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://skynetlab-cortex-saas-mcp.cortex-320.workers.dev/mcp"
+    }
+  ]
+}

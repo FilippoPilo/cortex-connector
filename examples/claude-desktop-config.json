@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "cortex": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "mcp-remote",
+        "https://skynetlab-cortex-saas-mcp.cortex-320.workers.dev/mcp"
+      ]
+    }
+  }
+}

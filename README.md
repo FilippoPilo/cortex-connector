@@ -8,6 +8,8 @@
 
 > 🇮🇹 Versione italiana: [README.it.md](README.it.md)
 
+![Cortex — one external brain, shared by all your AIs](assets/cortex-site-hero.png)
+
 ---
 
 ## Why Cortex is not "just another memory plugin"

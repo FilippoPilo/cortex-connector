@@ -6,6 +6,8 @@
 
 🌐 Website: [skynetlab-cortex.com](https://skynetlab-cortex.com/) · 📄 [Patent](https://skynetlab-cortex.com/brevetto) · 📊 [Benchmark](https://skynetlab-cortex.com/benchmark) · 📚 [Paper](https://skynetlab-cortex.com/paper) · 💶 [Pricing](https://skynetlab-cortex.com/abbonamenti)
 
+[![MCP Registry](https://img.shields.io/badge/MCP%20Registry-io.github.FilippoPilo%2Fcortex-b8523d)](https://registry.modelcontextprotocol.io) [![Listed on mcpservers.org](https://mcpservers.org/badge.svg)](https://mcpservers.org/servers/filippopilo/cortex-connector)
+
 > 🇮🇹 Versione italiana: [README.it.md](README.it.md)
 
 ![Cortex — one external brain, shared by all your AIs](assets/cortex-site-hero.png)

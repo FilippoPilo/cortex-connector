@@ -2,7 +2,7 @@
 
 > One external brain, model-agnostic, in production. Connect it to Claude in two minutes — free trial, no credit card.
 
-**Cortex** is a patent-protected semantic memory infrastructure developed by [SKYNETLAB](https://skynetlab.net/) (Bergamo, Italy). Connected to your AI assistant as a remote MCP connector, it lets your conversations **save decisions, context and sources — and find them again in every later session**. Your AI remembers, and can show *why* it remembers.
+**Cortex** is a patent-pending semantic memory infrastructure developed by [SKYNETLAB](https://skynetlab.net/) (Bergamo, Italy). Connected to your AI assistant as a remote MCP connector, it lets your conversations **save decisions, context and sources — and find them again in every later session**. Your AI remembers, and can show *why* it remembers.
 
 🌐 Website: [skynetlab-cortex.com](https://skynetlab-cortex.com/) · 📄 [Patent](https://skynetlab-cortex.com/brevetto) · 📊 [Benchmark](https://skynetlab-cortex.com/benchmark) · 📚 [Paper](https://skynetlab-cortex.com/paper) · 💶 [Pricing](https://skynetlab-cortex.com/abbonamenti)
 
@@ -86,7 +86,7 @@ To disconnect, simply remove the connector from your client's settings; your mem
 
 ## Is this open source?
 
-The Cortex memory engine is a **hosted, patent-protected service** — its source code is not published. This repository contains the public documentation and client-side configuration examples for connecting to it. Everything in this repository is released under the [MIT License](LICENSE).
+The Cortex memory engine is a **hosted, patent-pending service** — its source code is not published. This repository contains the public documentation and client-side configuration examples for connecting to it. Everything in this repository is released under the [MIT License](LICENSE).
 
 ## Support
 

@@ -2,7 +2,7 @@
 
 > Un cervello esterno, model-agnostic, in produzione. Collegalo a Claude in due minuti — prova gratuita, senza carta di credito.
 
-**Cortex** è un'infrastruttura di memoria semantica protetta da brevetto, sviluppata da [SKYNETLAB](https://skynetlab.net/) (Bergamo). Collegato al tuo assistente AI come connettore MCP remoto, permette alle tue conversazioni di **salvare decisioni, contesto e fonti — e di ritrovarli in ogni sessione successiva**. La tua AI ricorda, e può mostrare *perché* ricorda.
+**Cortex** è un'infrastruttura di memoria semantica con domanda di brevetto depositata, sviluppata da [SKYNETLAB](https://skynetlab.net/) (Bergamo). Collegato al tuo assistente AI come connettore MCP remoto, permette alle tue conversazioni di **salvare decisioni, contesto e fonti — e di ritrovarli in ogni sessione successiva**. La tua AI ricorda, e può mostrare *perché* ricorda.
 
 🌐 Sito: [skynetlab-cortex.com](https://skynetlab-cortex.com/) · 📄 [Brevetto](https://skynetlab-cortex.com/brevetto) · 📊 [Benchmark](https://skynetlab-cortex.com/benchmark) · 📚 [Paper](https://skynetlab-cortex.com/paper) · 💶 [Abbonamenti](https://skynetlab-cortex.com/abbonamenti)
 
@@ -73,7 +73,7 @@ Per scollegare Cortex basta rimuovere il connettore dalle impostazioni del clien
 
 ## È open source?
 
-Il motore di memoria Cortex è un **servizio hosted protetto da brevetto** — il suo codice sorgente non è pubblicato. Questo repository contiene la documentazione pubblica e gli esempi di configurazione lato client. Tutto ciò che è in questo repository è rilasciato con [licenza MIT](LICENSE).
+Il motore di memoria Cortex è un **servizio hosted con domanda di brevetto depositata** — il suo codice sorgente non è pubblicato. Questo repository contiene la documentazione pubblica e gli esempi di configurazione lato client. Tutto ciò che è in questo repository è rilasciato con [licenza MIT](LICENSE).
 
 ## Supporto
 

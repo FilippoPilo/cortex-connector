@@ -1,14 +1,23 @@
 {
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
-  "name": "io.github.FilippoPilo/cortex-connector",
-  "title": "Cortex by SKYNETLAB",
-  "description": "Semantic memory shared by ChatGPT, Claude and any MCP client. Quality-gated writes. Patent pending.",
+  "name": "io.github.FilippoPilo/cortex",
+  "title": "Cortex",
+  "description": "Patent-pending semantic memory for AI agents: quality-gated writes, conflict tracking. Free trial.",
   "repository": {
     "url": "https://github.com/FilippoPilo/cortex-connector",
     "source": "github"
   },
-  "websiteUrl": "https://skynetlab-cortex.com/",
   "version": "1.1.0",
+  "websiteUrl": "https://skynetlab-cortex.com",
+  "icons": [
+    {
+      "src": "https://skynetlab-cortex.com/assets/logo-mark.png",
+      "mimeType": "image/png",
+      "sizes": [
+        "472x472"
+      ]
+    }
+  ],
   "remotes": [
     {
       "type": "streamable-http",

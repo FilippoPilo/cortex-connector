@@ -54,7 +54,32 @@ Poi autentica quando richiesto (`/mcp` mostra lo stato della connessione).
 
 Per i client MCP che non supportano i connettori remoti nativamente, usa il bridge [`mcp-remote`](https://www.npmjs.com/package/mcp-remote). Esempio di configurazione nella cartella [`examples/`](examples/).
 
-## I sei strumenti
+## Avvio rapido — questo repository come server stdio locale
+
+Il repository contiene anche un piccolo **server MCP stdio** (`server/`) che espone gli strumenti di Cortex in locale e inoltra ogni chiamata al servizio ospitato. Serve ai client MCP, alle directory e ai valutatori che hanno bisogno di un processo locale: parte, elenca i sette strumenti e risponde all'introspezione senza alcuna configurazione; le chiamate vengono inoltrate quando è impostato un token di accesso.
+
+```bash
+git clone https://github.com/FilippoPilo/cortex-connector.git
+cd cortex-connector
+npm install
+CORTEX_ACCESS_TOKEN=<il tuo token> node server/index.js
+```
+
+Oppure con Docker:
+
+```bash
+docker build -t cortex-connector .
+docker run -i --rm -e CORTEX_ACCESS_TOKEN=<il tuo token> cortex-connector
+```
+
+| Variabile | Significato |
+|---|---|
+| `CORTEX_ACCESS_TOKEN` | Bearer token per il connettore ospitato (l'access token OAuth rilasciato all'accesso, per esempio quello che `mcp-remote` conserva). Facoltativo: senza token il server elenca solo gli strumenti. |
+| `CORTEX_MCP_URL` | Endpoint remoto, di default il connettore Cortex ospitato. |
+
+`npm test` esegue un autotest (initialize, tools/list, una chiamata senza token).
+
+## I sette strumenti
 
 | Strumento | Tipo | Descrizione |
 |---|---|---|
@@ -63,6 +88,7 @@ Per i client MCP che non supportano i connettori remoti nativamente, usa il brid
 | **Recall & synthesize** | lettura | Sintesi narrativa di ciò che Cortex sa su un tema |
 | **Show conflicts** | lettura | Contraddizioni tracciate tra memorie |
 | **Save memory** | scrittura | Salva una memoria — dopo un controllo qualità contro duplicati e ridondanza |
+| **Write status** | lettura | Esito di un salvataggio in coda: verdetto del controllo qualità ed eventuali conflitti aperti |
 | **Forget memory** | distruttivo | Cancella una memoria — sempre con conferma esplicita |
 
 ## Dati e privacy
@@ -73,7 +99,7 @@ Per scollegare Cortex basta rimuovere il connettore dalle impostazioni del clien
 
 ## È open source?
 
-Il motore di memoria Cortex è un **servizio hosted con domanda di brevetto depositata** — il suo codice sorgente non è pubblicato. Questo repository contiene la documentazione pubblica e gli esempi di configurazione lato client. Tutto ciò che è in questo repository è rilasciato con [licenza MIT](LICENSE).
+Il motore di memoria Cortex è un **servizio hosted con domanda di brevetto depositata** — il suo codice sorgente non è pubblicato. Questo repository contiene la documentazione pubblica, gli esempi di configurazione lato client e un piccolo bridge stdio (`server/`) per collegarsi al servizio. Tutto ciò che è in questo repository è rilasciato con [licenza MIT](LICENSE).
 
 ## Supporto
 

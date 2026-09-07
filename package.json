@@ -1,0 +1,32 @@
+{
+  "name": "cortex-connector",
+  "version": "1.1.0",
+  "description": "Cortex, patent-pending semantic memory for AI agents: stdio MCP bridge to the hosted Cortex connector (quality-gated writes, conflict tracking).",
+  "type": "module",
+  "license": "MIT",
+  "author": "Filippo Pilotta, SKYNETLAB (https://skynetlab.net/)",
+  "homepage": "https://skynetlab-cortex.com/",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FilippoPilo/cortex-connector.git"
+  },
+  "bugs": {
+    "url": "https://github.com/FilippoPilo/cortex-connector/issues"
+  },
+  "keywords": ["mcp", "model-context-protocol", "memory", "semantic-memory", "ai-agents", "claude", "chatgpt", "cortex", "skynetlab"],
+  "bin": {
+    "cortex-connector": "server/index.js"
+  },
+  "main": "server/index.js",
+  "files": ["server", "README.md", "LICENSE"],
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "start": "node server/index.js",
+    "test": "node server/selftest.js"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.12.0"
+  }
+}

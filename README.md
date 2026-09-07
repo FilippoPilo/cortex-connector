@@ -67,7 +67,32 @@ For MCP clients that don't support remote connectors natively, use the [`mcp-rem
 }
 ```
 
-## The six tools
+## Quick start — this repository as a local stdio server
+
+This repository also ships a small **stdio MCP server** (`server/`) that exposes the Cortex tools locally and forwards every call to the hosted service. It is meant for MCP clients, registries and evaluators that need a local process: it starts, lists its seven tools and answers introspection with no configuration at all; tool calls are forwarded when an access token is set.
+
+```bash
+git clone https://github.com/FilippoPilo/cortex-connector.git
+cd cortex-connector
+npm install
+CORTEX_ACCESS_TOKEN=<your token> node server/index.js
+```
+
+Or with Docker:
+
+```bash
+docker build -t cortex-connector .
+docker run -i --rm -e CORTEX_ACCESS_TOKEN=<your token> cortex-connector
+```
+
+| Variable | Meaning |
+|---|---|
+| `CORTEX_ACCESS_TOKEN` | Bearer token for the hosted connector (the OAuth access token issued at sign-in, for example the one `mcp-remote` stores). Optional: without it the server only lists tools. |
+| `CORTEX_MCP_URL` | Remote endpoint, defaults to the hosted Cortex connector. |
+
+`npm test` runs a self test (initialize, tools/list, one call without token).
+
+## The seven tools
 
 | Tool | Type | Description |
 |---|---|---|
@@ -76,6 +101,7 @@ For MCP clients that don't support remote connectors natively, use the [`mcp-rem
 | **Recall & synthesize** | read | Narrative synthesis of what Cortex knows about a topic |
 | **Show conflicts** | read | Tracked contradictions between memories |
 | **Save memory** | write | Stores a memory — after a quality check against duplicates and redundancy |
+| **Write status** | read | Outcome of a queued save: quality-gate verdict and any open conflicts |
 | **Forget memory** | destructive | Deletes a memory — always with explicit confirmation |
 
 ## Data & privacy
@@ -86,7 +112,7 @@ To disconnect, simply remove the connector from your client's settings; your mem
 
 ## Is this open source?
 
-The Cortex memory engine is a **hosted, patent-pending service** — its source code is not published. This repository contains the public documentation and client-side configuration examples for connecting to it. Everything in this repository is released under the [MIT License](LICENSE).
+The Cortex memory engine is a **hosted, patent-pending service** — its source code is not published. This repository contains the public documentation, the client-side configuration examples and a small stdio bridge (`server/`) for connecting to it. Everything in this repository is released under the [MIT License](LICENSE).
 
 ## Support
 
